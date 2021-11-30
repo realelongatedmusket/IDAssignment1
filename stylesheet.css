@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 .page-1{
     width: 100%;
     height: 100vh;
@@ -19,7 +27,6 @@ nav{
     align-items: center;
     min-height: 10vh;
     background-color: #45aaf1;
-    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -63,14 +70,6 @@ a:hover:after{
     width: 100%;
 }
 
-.logo-text{
-    color: white;
-    font-size: 20px;
-    letter-spacing: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
 .main-text{
     display: flex;
     justify-content: space-between;
@@ -92,27 +91,32 @@ a:hover:after{
     bottom: 5px;
 }
 
+.logo-text{
+    color: white;
+}
 .section-1 h2{
-    font-size: 70px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 90px;
     color: white;
 }
 
+.blue-text{
+    color: #45aaf1;
+    text-decoration: underline #45aaf1;
+}
+
 .section-1 h3{
-    font-size: 30px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
     color: white;   
 }
 
 .section-1 button{
     position: relative;
-    width: 200px;
+    width: 220px;
     padding: 20px 0;
     color: white;
     text-align: center;
     margin: 20px 0px;
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
     cursor: pointer;
     border: 2px solid white;
     background: transparent;
@@ -150,17 +154,21 @@ a:hover:after{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: orange;
+    background: #45aaf1;
 }
 
 .about-text h2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 2em;
+    font-size: 3em;
+}
+
+.white-text{
+    color: white;
+    text-decoration: underline;
 }
 
 .about-text p{
-    font-family: 'Poppins', sans-serif;
     font-size: 1em;
+    margin-top: 20px;
 }
 
 .about-text button{
@@ -171,7 +179,6 @@ a:hover:after{
     text-align: center;
     margin: 20px 0px;
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
     cursor: pointer;
     border: 2px solid white;
     background: transparent;
@@ -202,138 +209,292 @@ a:hover:after{
     color: #45aaf1;
 }
 
-.carousel-container{
+.about-gif{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    height: 100vh;
-    background: pink;
 }
 
-.carousel{
+.page-3{
     position: relative;
-    width: 800px;
-    min-height: 500px;
-    margin: 20px;
-    overflow: hidden;
-    border-radius: 10px;
-    
-}
-
-.carousel .slide{
-    position: absolute;
     width: 100%;
-    height: 100%;
-    clip-path: circle(0% at 0 50%);
+    height: 100vh;
+    background-image: url(img/4170001.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.carousel .slide.active{
-    clip-path: circle(150% at 0 50%);
-    transition: 2s;
+.slide{
+    display: none
+}
+img{
+    vertical-align: middle;
 }
 
-.carousel .slide img{
+.carousel-container{
+  max-width: 40%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+
+.next{
+  right: 0;
+}
+
+.prev:hover, .next:hover{
+  background-color: rgba(113, 112, 112, 0.8);
+}
+
+.attribute-text{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel .slide .slide-info{
-    position: absolute;
-    color: #222;
+    color: black;
     background: rgba(255,255,255, 0.3);
     width: 75%;
     margin-top: 50px;
     margin-left: 50px;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
-
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
 }
-.carousel .slide .slide-info h2{
+
+.attribute-text h2{
+    display: flex;
+    justify-content: center;
     font-size: 2em;
     font-weight: 800;
 }
 
-.carousel .slide .slide-info p{
+.yellow-highlight{
+    background-color: #FFFF00;
+}
+
+.attribute-text p{
     font-size: 1em;
     font-weight: 400;
 }
 
-.carousel-nav{
-    height: 500px;
-    display: flex;
+.slide img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.dot{
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+  background-color: #717171;
+}
+
+.fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.page-4{
+    position: relative;
+    padding-left: 30px;
+    padding-top: 30px;
+    margin: 0px 0;
+    width: 100%;
+    height: 100vh;
+    background: #45aaf1;
+}
+
+.skill-text{
+    position: absolute;
+    width: 45%;
+}
+
+.skill-text h2{
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.skill-text p{
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.skill-bar-container{
+    display: grid;
+    justify-content: end;
     align-items: center;
-    justify-content: space-between;
+    height: 100%;
+}
+
+::selection{
+    color: #fff;
+    background: #6665ee;
+  }
+
+  .skill-bars{
+    padding: 25px 30px;
+    width: 600px;
+    background: rgb(208, 208, 208);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .skill-bars .bar{
+    margin: 20px 0;
+  }
+
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+  }
+
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+  }
+
+  .skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
     opacity: 0;
-    transition: opacity 0.5s ease;
-}
+    animation: showText 0.5s 1s linear forwards;
+  }
 
-.carousel:hover .navigation{
-    opacity: 1;
-}
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
 
-.prev-btn, .next-btn{
-    z-index: 999;
-    font-size: 2em;
-    color: #222;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    cursor: pointer;
-}
-
-.prev-btn{
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-  
-.next-btn{
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
-
-.carousel-track{
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-}
-
-.carousel-track .slide-icon{
-    z-index: 999;
-    background: rgba(255, 255, 255, 0.5);
-    width: 25px;
+  .skill-bars .bar .progress-line{
     height: 10px;
-    transform: translateY(-50px);
-    margin: 0 6px;
-    border-radius: 2px;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
-}
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
 
-.carousel-track .slide-icon.active{
-    background: #4285F4;
-}
-
-@media (max-width: 900px){
-    .carousel{
-        width: 100%;
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
     }
+  }
 
-    .carousel .slide .info{
-        position: relative;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #6665ee;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
 
-@media (max-width: 500px){
-    .carousel .slide .info h2{
-        font-size: 1.8em;
-        line-height: 40px;
-    }
+  .bar .progress-line.html span{
+    width: 70%;
+  }
 
-    .carousel .slide .info p{
-        font-size: 0.9em;
+  .bar .progress-line.css span{
+    width: 60%;
+  }
+
+  .bar .progress-line.csharp span{
+    width: 65%;
+  }
+
+  .bar .progress-line.python span{
+    width: 80%;
+  }
+
+  .bar .progress-line.mysql span{
+    width: 80%;
+  }
+
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
     }
-}
+  }
+
+  .progress-line.html span::after{
+    content: "70%";
+  }
+
+  .progress-line.css span::after{
+    content: "60%";
+  }
+
+  .progress-line.csharp span::after{
+    content: "65%";
+  }
+
+  .progress-line.python span::after{
+    content: "80%";
+  }
+
+  .progress-line.mysql span::after{
+    content: "80%";
+  }

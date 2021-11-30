@@ -1,45 +1,30 @@
-const carousel = document.querySelector(".carousel");
-const nextBtn = document.querySelector(".next-btn");
-const prevBtn = document.querySelector(".prev-btn");
-const slides = document.querySelectorAll(".slide");
-const slideIcons = document.querySelectorAll(".slide-icon");
-const numberOfSlides = slides.length;
-var slideNumber = 0;
+var slideIndex = 1;
+showSlides(slideIndex);
 
-    //image slider next button
-nextBtn.addEventListener("click", () => {
-    slides.forEach((slide) => {
-        slide.classList.remove("active");
-        });
-    slideIcons.forEach((slideIcon) => {
-        slideIcon.classList.remove("active");
-        });
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-    slideNumber++;
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-    if(slideNumber > (numberOfSlides - 1)){
-        slideNumber = 0;
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length){
+        slideIndex = 1
     }
-
-    slides[slideNumber].classList.add("active");
-    slideIcons[slideNumber].classList.add("active");
-});
-
-    //image slider previous button
-prevBtn.addEventListener("click", () => {
-    slides.forEach((slide) => {
-        slide.classList.remove("active");
-        });
-    slideIcons.forEach((slideIcon) => {
-        slideIcon.classList.remove("active");
-        });
-
-    slideNumber--;
-
-    if (slideNumber < 0){
-        slideNumber = numberOfSlides - 1;
+    if (n < 1){
+        slideIndex = slides.length
+     }
+    for (i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
     }
-
-    slides[slideNumber].classList.add("active");
-    slideIcons[slideNumber].classList.add("active");
-});
+    for (i = 0; i < dots.length; i++){
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}

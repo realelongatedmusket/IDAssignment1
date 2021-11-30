@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://kit.fontawesome.com/7295b776fe.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script src="carousel.js"></script>
     <title>Assignment 1</title>
     
 </head>
@@ -17,10 +16,10 @@
             <div class="navbar">
                 <nav>
                     <div class="logo-text">
-                        <h3>Home</h3>
+                        <i class="fas fa-home fa-2x"></i>
                     </div>
                     <ul class="nav-elements"> 
-                        <li><a href="#">About</a></li>
+                        <li><a href="#about">About</a></li>
 
                         <li><a href="#">Portfolio</a></Li>
 
@@ -30,7 +29,7 @@
             </div>
             <div class="main-text">
                 <div class="section-1">
-                    <h2>Hey, I'm Paul</h2>
+                    <h2>Hey, I'm <span class="blue-text">Paul</span></h2>
 
                     <h3>How's it going?</h3>
                     <div>
@@ -39,9 +38,9 @@
                 </div>
             </div>
         </section>
-        <section class="page-2">
+        <section class="page-2" id="about">
             <div class="about-text">
-                <h2>About Me</h2>
+                <h2>Learn more <span class="white-text">about me</span>!</h2>
                 <p>I'm currently studying Information Technology in Ngee Ann Polytechnic
                     <br>Although I'm still in my first year, I try to take every oppurtunity to 
                     <br>improve my skills all through keeping a positive, enthusiastic mindset.
@@ -49,51 +48,130 @@
                     <br>This diploma will be a stepping stone to achieve some of my 
                     <br>biggest aspirations, one of which includes becoming a game developer.
                     <br>
-                    <br>Besides depression slowly creeping on my doorstep, I like to play ALOT of 
-                    <br>computer games and the occasional sport. These titles include Valorant    
-                    <br>and League of Legends, which may ring a bell. 
+                    <br>As for hobbies, I prefer more competitive activities like playing
+                    <br>computer games. These titles include Valorant and League of Legends, 
+                    <br>either of which may ring a bell. When I'm not rotting in my room,   
+                    <br>I also enjoy sports like basketball and badminton.
                 </p>
                 <div>
                     <button type="button">Check out my skillset!</button>
                 </div>
             </div>
-        </section>
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="slide active">
-                    <img src="img/image1.jpg">
-                    <div class="slide-info">
-                        <h2>slide 1</h2>
-                        <p>lorem</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="img/image2.jpg">
-                    <div class="slide-info">
-                        <h2>slide 1</h2>
-                        <p>lorem</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="img/myfacelol.png">
-                    <div class="slide-info">
-                        <h2>slide 1</h2>
-                        <p>lorem</p>
-                    </div>
-                </div>
-                <div class="carousel-nav">
-                    <i class="fas fa-chevron-left prev-btn"></i>
-                    <i class="fas fa-chevron-right next-btn "></i>
-                </div>
-                
-                <div class="carousel-track">
-                    <div class="slide-icon active"></div>
-                    <div class="slide-icon"></div>
-                    <div class="slide-icon"></div>
-                </div>
+            <div class="about-gif">
+                <img src="img/100.webp">
             </div>
-        </div>
-                        
+        </section>
+        <section class="page-3">
+            <div class="carousel-container">
+
+                <div class="slide fade">
+                    <img src="img/image1.jpg">
+                    <div class="attribute-text">
+                        <h2><span class="yellow-highlight">Communication</span></h2>
+                        <p>
+                            Communication is key when working with a group of people.
+                            I am able to convey messages with ease and avoid
+                            mistakes and misunderstandings when passing information.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="slide fade">
+                    <img src="img/image2.jpg">
+                    <div class="attribute-text">
+                        <h2><span class="yellow-highlight">Enthusiasm</span></h2>
+                        <p>
+                            Enthusiasm can be important in raising self/team morale
+                            which although is not talked about much, can be extremely
+                            important in boosting motivation and workrate.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="slide fade">
+                    <img src="img/myfacelol.png">
+                    <div class="attribute-text">
+                        <h2><span class="yellow-highlight">Diligence</span></h2>
+                        <p>
+                            Diligence is not only extremely important in studies and
+                            projects, but can also instill a certain discipline in oneself.
+                            Being diligent in my work has helped me avoid distractions and
+                            keep to deadlines for assignments and projects.
+                        </p>
+                    </div>
+                </div>
+        
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            </div>
+            <br>
+        
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        
+            <script src="carousel.js"></script>
+        </section>
+        <section class="page-4">
+            <div class="skill-text">
+                <h2>I'm a <span class="white-text">quick learner</span>!</h2>
+                <p>Through the multitude of modules taught in this IT course,
+                    <br>I have picked up many skills along the way, the most significant
+                    <br>of which include Programming/Coding languages. 
+                    <br>
+                    <br>Although not fully proficient, in this short period of just less 
+                    <br>than a year, I have accumulated sufficient experience  
+                    <br>through learning these skills.
+                </p>
+            </div>
+            <div class="skill-bar-container">
+                <div class="skill-bars">
+                    <div class="bar">
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>C#</span>
+                        </div>
+                        <div class="progress-line csharp">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="progress-line mysql">
+                            <span></span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>                    
     </div>
 
 
