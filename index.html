@@ -11,223 +11,224 @@
     
 </head>
 <body>
-    <div class="container">
-        <section class="page-1">
-            <div class="navbar">
-                <nav>
-                    <div class="logo-text">
-                        <i class="fas fa-home fa-2x"></i>
-                    </div>
-                    <ul class="nav-elements"> 
-                        <li><a href="#about">About</a></li>
+    <section class="page-1" id="top">
+        <div class="navbar">
+            <nav>
+                <div class="logo-content">
+                    <i class="fas fa-home fa-2x"></i>
+                </div>
+                <ul class="nav-elements"> 
+                    <li><a href="#about">About</a></li>
 
-                        <li><a href="#portfolio">Portfolio</a></Li>
+                    <li><a href="#portfolio">Portfolio</a></Li>
 
-                        <li><a href="#contact">Contact Me</a></li>
-                    </ul>
-                </nav>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="intro-content-container">
+            <div class="intro-content">
+                <h2>Hey, I'm <span class="blue-text">Paul</span></h2>
+
+                <h3>How's it going?</h3>
+
+                <button class="btn-design1" type="button"><a href="#about">Keep Going?</a></button>
+
             </div>
-            <div class="main-text">
-                <div class="section-1">
-                    <h2>Hey, I'm <span class="blue-text">Paul</span></h2>
+        </div>
+    </section>
+    <div class="underwater-bg">
+        <section class="page-2" id="about">
+            <div class="about-content">
+                <h2>Learn more <span class="blue-text">about me</span>!</h2>
+                <p>I'm currently studying Information Technology in Ngee Ann Polytechnic
+                    <br>Although I'm still in my first year, I try to take every oppurtunity to 
+                    <br>improve my skills all through keeping a positive, enthusiastic mindset.
+                    <br>
+                    <br>This diploma will be a stepping stone to achieve some of my 
+                    <br>biggest aspirations, one of which includes becoming a game developer.
+                    <br>
+                    <br>As for hobbies, I prefer more competitive activities like playing
+                    <br>computer games. These titles include Valorant and League of Legends, 
+                    <br>either of which may ring a bell. When I'm not rotting in my room,   
+                    <br>I also enjoy sports like basketball and badminton.
+                </p>
 
-                    <h3>How's it going?</h3>
-                    <div>
-                        <button type="button">Let's have a chat!</button>
+                <button class="btn-design1" type="button"><a href="#attribute">Check out my portfolio!</a></button>
+
+            </div>
+            <div class="about-gif">
+                <img src="img/100.webp">
+            </div>
+        </section>
+        <section class="page-3" id="attribute">
+            <div class="carousel-container">
+                <div class="slide fade">
+                    <img src="img/communication.png">
+                    <div class="attribute-text">
+                        <h2><span class="yellow-highlight">Communication</span></h2>
+                        <p>
+                            Communication is key when working with a group of people regardless of size.
+                            <br>I am able to learn from others' criticism whilst conveying my own messages 
+                            clearly and concisely to avoid mistakes and misunderstandings.
+                        </p>
                     </div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/inspiration.png">
+                    <div class="attribute-text">
+                        <h2><span class="yellow-highlight">Enthusiasm</span></h2>
+                        <p>
+                            Enthusiasm is important in raising self and team morale,
+                            which can lead to improved workrate.
+                            <br>Although it is not mentioned much, I take significance 
+                            in upkeeping my cheerful personality which helps to lift the mood.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/transfer.png">
+                    <div class="attribute-text">
+                        <h2><span class="yellow-highlight">Diligence</span></h2>
+                        <p>
+                            Diligence is not only extremely important in studies and
+                            projects, but can also instill a certain discipline in oneself.
+                            <br>Being diligent in my work has helped me avoid distractions and
+                            keep to deadlines for assignments and projects.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/leadership.png">
+                    <div class="attribute-text">
+                        <h2><span class="yellow-highlight">Leadership</span></h2>
+                        <p>
+                            Leadership is an essential attribute as any effective group
+                            effort requires a good leader. 
+                            <br>As someone who readily takes initiative,
+                            I can take charge and keep things well organised in a group setting.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/confidence.png">
+                    <div class="attribute-text">
+                        <h2><span class="yellow-highlight">Confidence</span></h2>
+                        <p>
+                            Confidence is a double-edged sword. For one, it can lead to great
+                            success or end in crippling failure.
+                            <br>Naturally an extrovert, I am confident in my work and actions.
+                            Being unafraid to make mistakes allows me to improve from them
+                            without being overconfident.
+                        </p>
+                    </div>
+                </div>
+        
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            </div>
+            <br>
+        
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        
+            <script src="carousel.js"></script>
+        </section>
+        <section class="page-4">
+            <div class="skill-content">
+                <h2>I'm a <span class="blue-text">quick learner</span>!</h2>
+                <br>
+                <p>Through the multitude of modules taught in this IT course,
+                    <br>I have picked up many skills along the way, the most significant
+                    <br>of which include Programming/Coding languages. 
+                    <br>
+                    <br>Although not fully proficient, in this short period of just less 
+                    <br>than a year, I have accumulated sufficient experience  
+                    <br>through learning these skills.
+                    <br>
+                    <br>With another 2 years to go, I will continue refining my skills
+                    <br>and expertise whilst contributing more projects and achievements.
+                </p>
+
+                <button class="btn-design1" type="button"><a href="#contact">Interested? Let's talk!</a></button>
+            </div>
+            <div class="skill-bar-container">
+                <div class="skill-bars">
+                    <div class="bar">
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>C#</span>
+                        </div>
+                        <div class="progress-line csharp">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="progress-line mysql">
+                            <span></span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>                    
+        <section class="page-5" id="contact">
+            <div class="contact-container">
+                <!-- <div class="contact-info">
+                    <div><i class="fas fa-map-marker-alt"></i>Address, City, Country</div>
+                    <div><i class="fas fa-envelope"></i>contact@email.com</div>
+                    <div><i class="fas fa-phone"></i>+00 0000 000 000</div>
+                    <div><i class="fas fa-clock"></i>Time</div>
+                </div> -->
+                <div class="contact-form">
+                    <div class="form-left"></div>
+                    <form class="form-container">
+                        <h2>Contact Me</h2>
+                        <input type="text" name="firstname" required
+                        class="form-element" placeholder="First Name">
+                        <input type="text" name="lastname" required
+                        class="form-element" placeholder="Last Name">
+                        <input type="email" name="email" required
+                        class="form-element" placeholder="Your Email">
+                        <textarea type="text" rows="5" name="message" required
+                        class="form-element" placeholder="Your Message"></textarea>
+                        <input type="submit" name="submit" class="submit-btn" value="Submit">
+                    </form>
                 </div>
             </div>
         </section>
-        <div class="bg">
-            <section class="page-2" id="about">
-                <div class="about-text">
-                    <h2>Learn more <span class="blue-text">about me</span>!</h2>
-                    <p>I'm currently studying Information Technology in Ngee Ann Polytechnic
-                        <br>Although I'm still in my first year, I try to take every oppurtunity to 
-                        <br>improve my skills all through keeping a positive, enthusiastic mindset.
-                        <br>
-                        <br>This diploma will be a stepping stone to achieve some of my 
-                        <br>biggest aspirations, one of which includes becoming a game developer.
-                        <br>
-                        <br>As for hobbies, I prefer more competitive activities like playing
-                        <br>computer games. These titles include Valorant and League of Legends, 
-                        <br>either of which may ring a bell. When I'm not rotting in my room,   
-                        <br>I also enjoy sports like basketball and badminton.
-                    </p>
-                    <div>
-                        <button type="button">Check out my skillset!</button>
-                    </div>
-                </div>
-                <div class="about-gif">
-                    <img src="img/100.webp">
-                </div>
-            </section>
-            <section class="page-3" id="portfolio">
-                <div class="carousel-container">
-                    <div class="slide fade">
-                        <img src="img/communication.png">
-                        <div class="attribute-text">
-                            <h2><span class="yellow-highlight">Communication</span></h2>
-                            <p>
-                                Communication is key when working with a group of people regardless of size.
-                                <br>I am able to learn from others' criticism whilst conveying my own messages 
-                                clearly and concisely to avoid mistakes and misunderstandings.
-                           </p>
-                        </div>
-                    </div>
-                    <div class="slide fade">
-                        <img src="img/inspiration.png">
-                        <div class="attribute-text">
-                            <h2><span class="yellow-highlight">Enthusiasm</span></h2>
-                            <p>
-                                Enthusiasm is important in raising self and team morale,
-                                which can lead to improved workrate.
-                                <br>Although it is not mentioned much, I take significance 
-                                in upkeeping my cheerful personality which helps to lift the mood.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide fade">
-                        <img src="img/transfer.png">
-                        <div class="attribute-text">
-                            <h2><span class="yellow-highlight">Diligence</span></h2>
-                            <p>
-                                Diligence is not only extremely important in studies and
-                                projects, but can also instill a certain discipline in oneself.
-                                <br>Being diligent in my work has helped me avoid distractions and
-                                keep to deadlines for assignments and projects.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide fade">
-                        <img src="img/leadership.png">
-                        <div class="attribute-text">
-                            <h2><span class="yellow-highlight">Leadership</span></h2>
-                            <p>
-                                Leadership is an essential attribute as any effective group
-                                effort requires a good leader. 
-                                <br>As someone who readily takes initiative,
-                                I can take charge and keep things well organised in a group setting.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide fade">
-                        <img src="img/confidence.png">
-                        <div class="attribute-text">
-                            <h2><span class="yellow-highlight">Confidence</span></h2>
-                            <p>
-                                Confidence is a double-edged sword. For one, it can lead to great
-                                success or end in crippling failure.
-                                <br>Naturally an extrovert, I am confident in my work and actions.
-                                Being unafraid to make mistakes allows me to improve from them
-                                without being overconfident.
-                            </p>
-                        </div>
-                    </div>
-            
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
-                </div>
-                <br>
-            
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                </div>
-            
-                <script src="carousel.js"></script>
-            </section>
-            <section class="page-4">
-                <div class="skill-text">
-                    <h2>I'm a <span class="blue-text">quick learner</span>!</h2>
-                    <br>
-                    <p>Through the multitude of modules taught in this IT course,
-                        <br>I have picked up many skills along the way, the most significant
-                        <br>of which include Programming/Coding languages. 
-                        <br>
-                        <br>Although not fully proficient, in this short period of just less 
-                        <br>than a year, I have accumulated sufficient experience  
-                        <br>through learning these skills.
-                        <br>
-                        <br>With another 2 years to go, I will continue refining my skills
-                        <br>and expertise whilst contributing more projects and achievements.
-                    </p>
-                </div>
-                <div class="skill-bar-container">
-                    <div class="skill-bars">
-                        <div class="bar">
-                            <div class="info">
-                                <span>Python</span>
-                            </div>
-                            <div class="progress-line python">
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="bar">
-                            <div class="info">
-                                <span>C#</span>
-                            </div>
-                            <div class="progress-line csharp">
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="bar">
-                            <div class="info">
-                                <span>HTML</span>
-                            </div>
-                            <div class="progress-line html">
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="bar">
-                            <div class="info">
-                                <span>CSS</span>
-                            </div>
-                            <div class="progress-line css">
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="bar">
-                            <div class="info">
-                                <span>MySQL</span>
-                            </div>
-                            <div class="progress-line mysql">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </section>                    
-            <section class="page-5" id="contact">
-                <div class="contact-container">
-                    <!-- <div class="contact-info">
-                        <div><i class="fas fa-map-marker-alt"></i>Address, City, Country</div>
-                        <div><i class="fas fa-envelope"></i>contact@email.com</div>
-                        <div><i class="fas fa-phone"></i>+00 0000 000 000</div>
-                        <div><i class="fas fa-clock"></i>Time</div>
-                    </div> -->
-                    <div class="contact-form">
-                        <div class="form-left"></div>
-                        <form class="form-container">
-                            <h2>Contact Me</h2>
-                            <input type="text" name="firstname" required
-                            class="form-element" placeholder="First Name">
-                            <input type="text" name="lastname" required
-                            class="form-element" placeholder="Last Name">
-                            <input type="email" name="email" required
-                            class="form-element" placeholder="Your Email">
-                            <textarea type="text" rows="5" name="message" required
-                            class="form-element" placeholder="Your Message"></textarea>
-                            <input type="submit" name="submit" class="submit-btn" value="Submit">
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </div>
+        <div><a class="return-top" href="#top"><i class="fas fa-arrow-up"></i></a></div>
     </div>
 
 

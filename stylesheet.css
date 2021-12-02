@@ -12,6 +12,82 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
+.underwater-bg{
+    background-image: url(img/underwater.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.blue-text{
+    color: #45aaf1;
+    text-decoration: underline #45aaf1;
+}
+
+.return-top{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(230, 230, 230, 0.6);
+    border-radius: 30px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: black;
+}
+
+.return-top:hover{
+    color: #45aaf1;
+}
+
+.btn-design1{
+    position: relative;
+    width: 200px;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    margin: 20px 0px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid white;
+    background: transparent;
+    z-index: 1;
+    transition: color 0.5s ease-in-out;
+}
+
+.btn-design1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    background-color: white;
+}
+
+.btn-design1:hover::before,
+.btn-design1:focus::before{
+    transform: scaleX(1);
+}
+
+.btn-design1:hover,
+.btn-design1:focus{
+    color: #45aaf1;
+}
+/* Page 1 CSS */
+
+/* General Styling */
 .page-1{
     width: 100%;
     height: 100vh;
@@ -21,13 +97,14 @@ body{
     background-attachment: fixed;
 }
 
-nav{
+/* Navigation bar */
+.navbar nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
     background-color: #45aaf1;
-
+    position: sticky;
 }
 
 .nav-elements{
@@ -51,7 +128,7 @@ nav{
     list-style: none;
 }
 
-a:after{
+.nav-elements a:after{
     content: "";
     position: absolute;
     background-color: black;
@@ -62,15 +139,16 @@ a:after{
     transition: 0.3s
 }
 
-a:hover{
+.nav-elements a:hover{
     color: black;
 }
 
-a:hover:after{
+.nav-elements a:hover:after{
     width: 100%;
 }
 
-.main-text{
+
+.intro-content-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,7 +158,7 @@ a:hover:after{
     margin-left: 150px;
 }
 
-.section-1::after{
+.intro-content::after{
     content: '';
     width: 10px;
     height: 90%;
@@ -91,62 +169,24 @@ a:hover:after{
     bottom: 5px;
 }
 
-.logo-text{
+.logo-content{
     color: white;
 }
-.section-1 h2{
+
+.intro-content h2{
     font-size: 90px;
     color: white;
 }
 
-.blue-text{
-    color: #45aaf1;
-    text-decoration: underline #45aaf1;
-}
-
-.section-1 h3{
+.intro-content h3{
     font-size: 40px;
     color: white;   
 }
 
-.section-1 button{
-    position: relative;
-    width: 220px;
-    padding: 20px 0;
-    color: white;
-    text-align: center;
-    margin: 20px 0px;
-    font-weight: bold;
-    cursor: pointer;
-    border: 2px solid white;
-    background: transparent;
-    z-index: 1;
-    transition: color 0.5s ease-in-out;
-}
 
-.section-1 button::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform: scaleX(0);
-    transition: transform 0.5s ease-in-out;
-    z-index: -1;
-    background-color: white;
-}
+/* Page 2 */
 
-.section-1 button:hover::before,
-.section-1 button:focus::before{
-    transform: scaleX(1);
-}
-
-.section-1 button:hover,
-.section-1 button:focus{
-    color: #45aaf1;
-}
-
+/* General Styling */
 .page-2{
     padding-left: 30px;
     padding-top: 30px;
@@ -154,81 +194,40 @@ a:hover:after{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #45aaf1;
 }
 
-.about-text h2{
+/* Left side text */
+.about-content h2{
     font-size: 3em;
 }
 
-.white-text{
-    color: white;
-    text-decoration: underline;
-}
-
-.about-text p{
+.about-content p{
     font-size: 1em;
     margin-top: 20px;
 }
 
-.about-text button{
-    position: relative;
-    width: 200px;
-    padding: 20px 0;
-    color: white;
-    text-align: center;
-    margin: 20px 0px;
-    font-weight: bold;
-    cursor: pointer;
-    border: 2px solid white;
-    background: transparent;
-    z-index: 1;
-    transition: color 0.5s ease-in-out;
-}
-
-.about-text button::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform: scaleX(0);
-    transition: transform 0.5s ease-in-out;
-    z-index: -1;
-    background-color: white;
-}
-
-.about-text button:hover::before,
-.about-text button:focus::before{
-    transform: scaleX(1);
-}
-
-.about-text button:hover,
-.about-text button:focus{
-    color: #45aaf1;
-}
-
 .about-gif{
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    float: right;
 }
 
+/* Page 3 CSS */
+
+/* General Styling */
 .page-3{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(img/4170001.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
+/* Carousel Showcase */
 .slide{
     display: none
 }
-img{
+
+.slide img{
+    width: 100%;
+    height: 50vh;
+    object-fit: contain;
     vertical-align: middle;
 }
 
@@ -261,10 +260,11 @@ img{
   background-color: rgba(113, 112, 112, 0.8);
 }
 
+/* Text below Carousel */
 .attribute-text{
     position: absolute;
     color: black;
-    background: rgba(255,255,255, 0.3);
+    background: rgba(255,255,255, 0.8);
     width: 75%;
     margin-top: 50px;
     margin-left: 50px;
@@ -287,12 +287,6 @@ img{
 .attribute-text p{
     font-size: 1em;
     font-weight: 400;
-}
-
-.slide img{
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
 }
 
 .dot{
@@ -326,32 +320,35 @@ img{
   from {opacity: .4} 
   to {opacity: 1}
 }
+/* Page 4 Elements */
 
+/* General Styling */
 .page-4{
     position: relative;
     padding-left: 30px;
-    padding-top: 30px;
+    padding-top: 50px;
     margin: 0px 0;
     width: 100%;
     height: 100vh;
-    background: #45aaf1;
 }
 
-.skill-text{
+/* Left Side text */
+.skill-content{
     position: absolute;
     width: 45%;
 }
 
-.skill-text h2{
+.skill-content h2{
     font-size: 3em;
     font-weight: 800;
 }
 
-.skill-text p{
+.skill-content p{
     font-size: 1em;
     margin-top: 20px;
 }
 
+/* Skill Showcase Design */
 .skill-bar-container{
     display: grid;
     justify-content: end;
@@ -362,42 +359,42 @@ img{
 ::selection{
     color: #fff;
     background: #6665ee;
-  }
+}
 
-  .skill-bars{
+.skill-bars{
     padding: 25px 30px;
     width: 600px;
-    background: rgb(208, 208, 208);
+    background: rgba(255,255,255, 0.8);
     box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
     border-radius: 10px 0px 0px 10px;
-  }
+}
 
-  .skill-bars .bar{
+.skill-bars .bar{
     margin: 20px 0;
-  }
+}
 
-  .skill-bars .bar:first-child{
+.skill-bars .bar:first-child{
     margin-top: 0px;
-  }
+}
 
-  .skill-bars .bar .info{
+.skill-bars .bar .info{
     margin-bottom: 5px;
-  }
+}
 
-  .skill-bars .bar .info span{
+.skill-bars .bar .info span{
     font-weight: 500;
     font-size: 17px;
     opacity: 0;
     animation: showText 0.5s 1s linear forwards;
-  }
+}
 
-  @keyframes showText {
+@keyframes showText {
     100%{
       opacity: 1;
     }
-  }
+}
 
-  .skill-bars .bar .progress-line{
+.skill-bars .bar .progress-line{
     height: 10px;
     width: 100%;
     background: #f0f0f0;
@@ -406,15 +403,15 @@ img{
     transform-origin: left;
     border-radius: 10px;
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
-  }
+}
 
-  @keyframes animate {
+@keyframes animate {
     100%{
       transform: scaleX(1);
     }
-  }
+}
 
-  .bar .progress-line span{
+.bar .progress-line span{
     height: 100%;
     position: absolute;
     border-radius: 10px;
@@ -422,29 +419,29 @@ img{
     transform-origin: left;
     background: #6665ee;
     animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
-  }
+}
 
-  .bar .progress-line.html span{
+.bar .progress-line.html span{
     width: 70%;
-  }
+}
 
-  .bar .progress-line.css span{
+.bar .progress-line.css span{
     width: 60%;
-  }
+}
 
-  .bar .progress-line.csharp span{
+.bar .progress-line.csharp span{
     width: 65%;
-  }
+}
 
-  .bar .progress-line.python span{
+.bar .progress-line.python span{
     width: 80%;
-  }
+}
 
-  .bar .progress-line.mysql span{
+.bar .progress-line.mysql span{
     width: 80%;
-  }
+}
 
-  .progress-line span::before{
+.progress-line span::before{
     position: absolute;
     content: "";
     top: -10px;
@@ -457,9 +454,9 @@ img{
     border-top-color: #000;
     opacity: 0;
     animation: showText2 0.5s 1.5s linear forwards;
-  }
+}
 
-  .progress-line span::after{
+.progress-line span::after{
     position: absolute;
     top: -28px;
     right: 0;
@@ -471,30 +468,151 @@ img{
     border-radius: 3px;
     opacity: 0;
     animation: showText2 0.5s 1.5s linear forwards;
-  }
+}
 
-  @keyframes showText2 {
+@keyframes showText2 {
     100%{
       opacity: 1;
     }
-  }
+}
 
-  .progress-line.html span::after{
+.progress-line.html span::after{
     content: "70%";
-  }
+}
 
-  .progress-line.css span::after{
+.progress-line.css span::after{
     content: "60%";
-  }
+}
 
-  .progress-line.csharp span::after{
+.progress-line.csharp span::after{
     content: "65%";
-  }
+}
 
-  .progress-line.python span::after{
+.progress-line.python span::after{
     content: "80%";
-  }
+}
 
-  .progress-line.mysql span::after{
+.progress-line.mysql span::after{
     content: "80%";
-  }
+}
+
+/* Page 5 Elements */
+
+/* General Styling*/
+.page-5{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact Form */
+.contact-container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.contact-container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("img/AdobeStock_420316653.jpeg") no-repeat center;
+	background-size: contain;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-form{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+
+.form-left{
+	background: url("img/AdobeStock_420316653.jpeg") no-repeat center;
+	background-size: contain;
+	height: 100%;
+}
+
+.form-container{
+	padding: 25px 40px;
+}
+
+.form-container h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+.form-container h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #45aaf1;
+}
+
+.form-element{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.form-element:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.submit-btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #45aaf1;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.submit-btn:hover{
+    background-color: #6665ee;
+}
+
+.form-element:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-form{
+		grid-template-columns: 1fr;
+	}
+	.form-left{
+		height: 200px;
+	}
+}
