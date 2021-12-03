@@ -75,8 +75,8 @@ Text are not taken from other sources.
 ### Media
 #### For Images:
 https://fontawesome.com/
-https://stock.adobe.com/
-https://www.google.com/
+<br>https://stock.adobe.com/
+<br>https://www.google.com/
 #### For Icons: 
 https://www.flaticon.com/ 
 
