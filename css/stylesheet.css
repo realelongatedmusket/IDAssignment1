@@ -17,7 +17,7 @@ a{
 }
 
 .underwater-bg{
-    background-image: url(img/underwater.jpeg);
+    background-image: url(../img/underwater.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,7 +91,7 @@ a{
 .page-1{
     width: 100%;
     height: 100vh;
-    background-image: url(img/4170001.jpg);
+    background-image: url(../img/4170001.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -665,7 +665,7 @@ a{
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: url("img/AdobeStock_420316653.jpeg") no-repeat center;
+	background: url("../img/AdobeStock_420316653.jpeg") no-repeat center;
 	background-size: contain;
 	filter: blur(50px);
 	z-index: -1;
@@ -682,7 +682,7 @@ a{
 }
 
 .form-left{
-	background: url("img/AdobeStock_420316653.jpeg") no-repeat center;
+	background: url("../img/AdobeStock_420316653.jpeg") no-repeat center;
 	background-size: contain;
 	height: 100%;
 }

@@ -41,15 +41,22 @@ Go to the start of the website
 Pressing the navigation buttons in the navigation bar such as "About" scrolls to the about me page, "Portfolio" scrolls to the start of the skills/attributes showcase, "Contact" scrolls to the contact page.
 The page elements re-adjust to fit smaller screen sizes. The navigation bar turns into just the logo and a burger list.
 
+![Page1Preview](img/page1.png)
+
 About Me Section:
 Go to the "About" section
 Pressing "Check out my portfolio" scrolls down to the "Portfolio" section
+
+![Page2Preview](img/page2.png)
 
 Portfolio section:
 Go to the "Portfolio" section
 Pressing the right/left arrows switches the carousel image accordingly.
 The buttons at the bottom also update accordingly.
 The proficiency bar chart animates to display information. Was not able to animate on entering viewport but instead only on refresh.
+
+![Page3Preview](img/page3.png)
+![Page4Preview](img/page4.png)
 
 Contact Section:
 Go to the "Contact" section
@@ -58,7 +65,7 @@ Try to submit the form with an invalid email address and verify that a relevant 
 Try to submit the form with all inputs valid and form is sent and reset when submit button is pressed.
 Whole form aligns by column when on smaller screen sizes.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+![Page5Preview](img/page5.png)
 
 Credits
 
@@ -66,14 +73,15 @@ Content
 Text are not taken from other sources.
 
 Media
+google.com
 https://fontawesome.com/
 https://stock.adobe.com/ for images
 https://www.flaticon.com/ for icons
 
-
 Acknowledgements
 I received inspiration for this project from personal portfolio websites like https://jacekjeznach.com/ and https://mysweetchubswebsite-nwzwhphf4q-uc.a.run.app/
 I also received inspiration and picked up some skills from 
+https://www.w3schools.com/
 Scroll to top button: https://www.youtube.com/watch?v=SJVCvnKM_lI&ab_channel=GTCoding , 
 Carousel: https://www.youtube.com/watch?v=tphDji-XZCE&t=327s&ab_channel=CodingSnow ,
 Navigation bar: https://www.youtube.com/watch?v=oLgtucwjVII&t=1s&ab_channel=CodingNepal ,
