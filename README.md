@@ -2,40 +2,33 @@
 My Assignment 1 for Interactive Development
 
 My page is designed to allow users to learn more about me both personally and professionally all through an aesthetically pleasing, easily navigatable site. This includes a brief description of myself along with a showcase of the skills and valuable attributes I bring to the table. I added some additional features such as scroll button to provide convenience when navigating the website. 
-
+As for the design choices, I decided to go with a brighter, more cheerful feel to the page as I wanted to convey my own personality in the design of the website.
 
 Design Process
 
 This website was made for potential employers to consider me as a suitable candidate for a job, taking into account my skills and attributes. This website can not only present myself in a fashionable, professional setting, and clearly outlines these skills and attributes I am presenting.
 
 Wireframes
+[ID Assignment 1 Wireframe.xd]()
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-
-As a user type, I want to perform an action, so that I can achieve a goal. 
+User Stories
 
 As an employer on the website, I want the ability to contact the website creator to suggest potential interest in them. This increases the oppurtunities for both creator and end-user. THis is done through validation of particulars in the form. I would also want the ability to see a clear showcase of skills so as to increase ease of evaluation.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory) Include the Adobe XD wireframe as a folder. You can include the XD share url.
-
-Features
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
-
 Existing Features
+Parallax effect/One-Page Website - Give a whole feeling to the website instead of constantly having to switch pages
 Navigation bar - allows end-users to navigate to a specific point in the website by clicking on their desired section.
 Scroll-To-Top Button - allows end-users to navigate back up to the beginning of the page by clicking on the button.
 Scroll-To-Next-Section button - allows end-users to again navigate to the next section by clicking the button
 Carousel - allows end-users/employers to spin through a skill showcase by clicking the right or left arrow.
 Contact Me Form - allows end-users to contact the website creator by having them fill up their name, email and message they want to send and clicking on the submit button.
 
-...
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
 Features Left to Implement
 A secondary display for achievements.
 Additional Javascript for automation of animations
 
 Technologies Used
+Tools: Visual Studio Code, Adobe XD
 Languages: HTML, CSS, Javascript
 Libraries: 
 Font Awesome - Used for simple, stylish icons to replace some text for clean look. (https://fontawesome.com/)
@@ -70,6 +63,7 @@ If this section grows too long, you may want to split it off into a separate fil
 Credits
 
 Content
+Text are not taken from other sources.
 
 Media
 https://fontawesome.com/
