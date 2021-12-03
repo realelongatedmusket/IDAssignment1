@@ -147,6 +147,78 @@ a{
     width: 100%;
 }
 
+.burger{
+    display: none;
+}
+
+.burger:hover{
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1024px){
+    .nav-elements{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+
+    }
+    .nav-elements{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-elements li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg translate(-5px,6px));
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg translate(-5px,-6px));
+}
 
 .intro-content-container{
     display: flex;
@@ -182,7 +254,20 @@ a{
     font-size: 40px;
     color: white;   
 }
-
+@media screen and (max-width: 768px){
+    .intro-content-container{
+        margin-left: 75px;
+    }
+    .intro-content h2{
+        font-size: 40px;
+    }
+    .intro-content h3{
+        font-size: 15px;
+    }
+    .intro-content button{
+        width: 150px;
+    }
+}
 
 /* Page 2 */
 
@@ -198,11 +283,11 @@ a{
 
 /* Left side text */
 .about-content h2{
-    font-size: 3em;
+    font-size: 60px;
 }
 
 .about-content p{
-    font-size: 1em;
+    font-size: 20px;
     margin-top: 20px;
 }
 
@@ -210,6 +295,21 @@ a{
     float: right;
 }
 
+@media screen and (max-width: 768px) {
+    .about-content h2{
+        font-size: 30px;
+    }
+    .about-content p{
+        font-size: 10px;
+    }
+    .about-content button{
+        width: 180px;
+    }
+    .about-gif img{
+        height: 60px;
+        width: 100%;
+    }
+}
 /* Page 3 CSS */
 
 /* General Styling */
@@ -320,6 +420,27 @@ a{
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+@media screen and (max-width: 768px) {
+    .slide img{
+        height: 30vh;
+    }
+    .prev .next{
+        font-size: 5px;
+    }
+    .attribute-text h2{
+        font-size: 25px;
+        font-weight: 800;
+    }
+    .attribute-text p{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .attribute-text{
+        width: 100%;
+    }
+}
+
 /* Page 4 Elements */
 
 /* General Styling */
@@ -494,6 +615,26 @@ a{
 
 .progress-line.mysql span::after{
     content: "80%";
+}
+
+@media screen and (max-width: 768px){
+
+    .skill-bars{
+        width: 200px;
+    }
+
+    .skill-content h2{
+        font-size: 20px;
+        font-weight: 800;
+    }
+    
+    .skill-content p{
+        font-size: 10px;
+        margin-top: 3px;
+    }
+    .skill-content button{
+        width: 150px;
+    }
 }
 
 /* Page 5 Elements */
