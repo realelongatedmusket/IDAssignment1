@@ -17,11 +17,11 @@ As an employer on the website, I want the ability to contact the website creator
 
 ## Existing Features
 Parallax effect/One-Page Website - Give a whole feeling to the website instead of constantly having to switch pages
-<br>Navigation bar - allows end-users to navigate to a specific point in the website by clicking on their desired section.
-<br>Scroll-To-Top Button - allows end-users to navigate back up to the beginning of the page by clicking on the button.
-<br>Scroll-To-Next-Section button - allows end-users to again navigate to the next section by clicking the button
-<br>Carousel - allows end-users/employers to spin through a skill showcase by clicking the right or left arrow.
-<br>Contact Me Form - allows end-users to contact the website creator by having them fill up their name, email and message they want to send and clicking on the submit button.
+- Navigation bar - allows end-users to navigate to a specific point in the website by clicking on their desired section.
+- Scroll-To-Top Button - allows end-users to navigate back up to the beginning of the page by clicking on the button.
+- Scroll-To-Next-Section button - allows end-users to again navigate to the next section by clicking the button
+- Carousel - allows end-users/employers to spin through a skill showcase by clicking the right or left arrow.
+- Contact Me Form - allows end-users to contact the website creator by having them fill up their name, email and message they want to send and clicking on the submit button.
 
 ### Features Left to Implement
 A secondary display for achievements.
@@ -73,10 +73,12 @@ Whole form aligns by column when on smaller screen sizes.
 Text are not taken from other sources.
 
 ### Media
-google.com
+#### For Images:
 https://fontawesome.com/
-https://stock.adobe.com/ for images
-https://www.flaticon.com/ for icons
+https://stock.adobe.com/
+https://www.google.com/
+#### For Icons: 
+https://www.flaticon.com/ 
 
 ### Acknowledgements
 I received inspiration for this project from personal portfolio websites like https://jacekjeznach.com/ and https://mysweetchubswebsite-nwzwhphf4q-uc.a.run.app/
